@@ -1,0 +1,383 @@
+/* Scss Document */
+/* line 4, main.scss */
+html {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* line 11, main.scss */
+body {
+  color: #333;
+  font-family: 'Dosis', sans-serif;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* line 19, main.scss */
+.container {
+  width: 100vw;
+}
+
+/* line 23, main.scss */
+.info-title {
+  font-size: 2.5rem;
+}
+
+/* line 27, main.scss */
+.title {
+  position: relative;
+  font-size: 3.5rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: #555;
+  padding-bottom: 3rem;
+  margin-bottom: 6rem;
+}
+
+/* line 37, main.scss */
+.title:before {
+  position: absolute;
+  left: 0;
+  right: 0;
+  content: '';
+  height: 0.1rem;
+  background: #666;
+  bottom: 0;
+}
+
+/* line 47, main.scss */
+.small-title {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: #395e1b;
+}
+
+/* line 54, main.scss */
+.light-green {
+  color: #9acf64;
+}
+
+/* line 58, main.scss */
+.button {
+  font-size: 1.75rem;
+  color: #fff;
+  background: #0d7619;
+  padding: 1rem 2rem;
+  border-radius: 10rem;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+/* line 68, main.scss */
+.bandeau {
+  content: '';
+  padding: 7.5%;
+  width: 100vw;
+  background: red;
+  position: relative;
+  z-index: 4;
+}
+
+/* line 77, main.scss */
+#bandeau-programme {
+  background: url(../img/bandeau.jpg) center/cover no-repeat;
+}
+
+/* line 81, main.scss */
+section {
+  position: relative;
+  z-index: 3;
+}
+
+/* line 86, main.scss */
+.landing {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: fixed center/cover no-repeat;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 98, main.scss */
+.landing * {
+  margin: 1rem 0;
+}
+
+/* line 102, main.scss */
+.landing .title {
+  padding: 0;
+  margin: 1rem 0;
+}
+
+/* line 107, main.scss */
+.landing .title:before {
+  height: 0;
+  background: none;
+}
+
+/* line 112, main.scss */
+.landing .button {
+  margin: 3rem 0;
+}
+
+/* line 116, main.scss */
+.content-section {
+  padding: 5% 12.5%;
+  margin: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 126, main.scss */
+.content {
+  font-size: 1.75rem;
+  color: #777;
+  text-align: center;
+  line-height: 1.75;
+}
+
+/* line 133, main.scss */
+.next {
+  display: flex;
+  justify-content: center;
+}
+
+/* line 138, main.scss */
+.schedule {
+  margin: 0 2vw 3vh 2vw;
+}
+
+/* line 142, main.scss */
+.event {
+  display: flex;
+}
+
+/* line 146, main.scss */
+.hour {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  margin: 2rem 2.5rem 2rem 0;
+}
+
+/* line 152, main.scss */
+.event-name {
+  font-size: 1.5rem;
+  margin: 2rem 0;
+}
+
+/* line 157, main.scss */
+.yellow {
+  background: #fffdf1;
+}
+
+/* line 161, main.scss */
+.programme-image {
+  position: absolute;
+  bottom: 0;
+  left: 70%;
+}
+
+/* line 167, main.scss */
+.intervenants {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 12.5%;
+}
+
+/* line 175, main.scss */
+.personne {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* line 181, main.scss */
+.photo {
+  content: '';
+  height: 15rem;
+  width: 15rem;
+  border-radius: 15rem;
+  background: red;
+  margin-bottom: 0.75rem;
+}
+
+/* line 190, main.scss */
+.personne-name {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+/* line 195, main.scss */
+.personne-content {
+  font-size: 1.75rem;
+  color: #777;
+  margin-bottom: 1.5rem;
+}
+
+/* line 201, main.scss */
+.personne .button {
+  font-weight: bolder;
+  background: #9acf64;
+}
+
+/* line 206, main.scss */
+.border-bottom {
+  border-bottom: 0.1rem solid #fff;
+}
+
+/* line 210, main.scss */
+.border-top {
+  border-top: 0.1rem solid #fff;
+}
+
+/* line 214, main.scss */
+.infos-icons {
+  width: 100vw;
+  height: 75vh;
+  display: flex;
+  position: relative;
+}
+/* line 220, main.scss */
+.infos-icons .informations {
+  height: 100%;
+  flex-basis: 20%;
+  display: flex;
+  flex-direction: column;
+  background: #9acf64;
+  color: #fff;
+  justify-content: center;
+  padding: 0 2.5vw;
+  font-size: 2.25rem;
+}
+/* line 231, main.scss */
+.infos-icons .informations .information {
+  height: 25vh;
+  display: flex;
+  align-items: center;
+}
+/* line 236, main.scss */
+.infos-icons .informations .information img {
+  margin-right: 3rem;
+  height: 17.5vh;
+}
+/* line 241, main.scss */
+.infos-icons .informations .information .text {
+  display: flex;
+  flex-direction: column;
+}
+/* line 248, main.scss */
+.infos-icons .image {
+  content: '';
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-basis: 60%;
+  height: 100%;
+}
+/* line 257, main.scss */
+.infos-icons .map-link {
+  position: absolute;
+  z-index: 2;
+  bottom: 3rem;
+  right: 8rem;
+  padding: 1rem;
+  background: red;
+  border-radius: 1000rem;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+/* line 271, main.scss */
+.all-videos {
+  width: 80vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+/* line 277, main.scss */
+.all-videos .overlay {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  filter: opacity(0);
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+/* line 289, main.scss */
+.all-videos .overlay:hover {
+  filter: opacity(1);
+}
+/* line 294, main.scss */
+.all-videos .videos {
+  display: flex;
+  flex-direction: column;
+  width: 39.5vw;
+}
+/* line 299, main.scss */
+.all-videos .videos .huge-video {
+  height: 40vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+/* line 306, main.scss */
+.all-videos .videos .huge-video .video-title {
+  font-size: 2.25rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+/* line 312, main.scss */
+.all-videos .videos .huge-video .name {
+  font-size: 1.75rem;
+  text-transform: uppercase;
+}
+/* line 318, main.scss */
+.all-videos .videos .small-video {
+  height: 20vh;
+  display: flex;
+  margin-top: 2vh;
+}
+/* line 323, main.scss */
+.all-videos .videos .small-video img {
+  content: '';
+  height: 20vh;
+  width: 15vw;
+  background: green;
+  cursor: pointer;
+}
+/* line 331, main.scss */
+.all-videos .videos .small-video .text {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem 0 0 3rem;
+  padding-right: 7.5vw;
+}
+/* line 337, main.scss */
+.all-videos .videos .small-video .text .video-title {
+  font-weight: bolder;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+/* line 343, main.scss */
+.all-videos .videos .small-video .text .name {
+  font-size: 1.5rem;
+}
