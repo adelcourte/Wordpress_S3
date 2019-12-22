@@ -1,0 +1,414 @@
+/* Scss Document */
+$light_green: #9acf64;
+
+a {
+	text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+	overflow-x: hidden;
+}
+
+body {
+  color: #333;
+  font-family: 'Dosis', sans-serif;
+  padding: 0;
+  margin: 0;
+	overflow-x: hidden;
+}
+
+.container {
+	width: 100vw;
+}
+
+.info-title {
+  font-size: 2.5rem;
+}
+
+.title {
+  position: relative;
+  font-size: 3.5rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: #555;
+  padding-bottom: 3rem;
+  margin-bottom: 6rem;
+}
+
+.title:before {
+  position: absolute;
+  left: 0;
+  right: 0;
+  content: '';
+  height: 0.1rem;
+  background: #666;
+  bottom: 0;
+}
+
+.small-title {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: #395e1b;
+}
+
+.light-green {
+  color: #9acf64;
+}
+
+.button {
+  font-size: 1.75rem;
+  color: #fff;
+  background: #0d7619;
+  padding: 1rem 2rem;
+  border-radius: 10rem;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.bandeau {
+  content: '';
+  padding: 7.5%;
+  width: 100vw;
+  background: red;
+  position: relative;
+  z-index: 4;
+}
+
+#bandeau-programme {
+  background: url(../img/bandeau.jpg) center/cover no-repeat;
+}
+
+section {
+  position: relative;
+  z-index: 3;
+}
+
+.landing {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: fixed center/cover no-repeat;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.landing * {
+  margin: 1rem 0;
+}
+
+.landing .title {
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.landing .title:before {
+  height: 0;
+  background: none;
+}
+
+.landing .button {
+  margin: 3rem 0;
+}
+
+.content-section {
+  padding: 5% 12.5%;
+  margin: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  font-size: 1.75rem;
+  color: #777;
+  text-align: center;
+  line-height: 1.75;
+}
+
+.next {
+  display: flex;
+  justify-content: center;
+}
+
+.schedule {
+  margin: 0 2vw 3vh 2vw;
+}
+
+.event {
+  display: flex;
+}
+
+.hour {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  margin: 2rem 2.5rem 2rem 0;
+}
+
+.event-name {
+  font-size: 1.5rem;
+  margin: 2rem 0;
+}
+
+.yellow {
+  background: #fffdf1;
+}
+
+.programme-image {
+  position: absolute;
+  bottom: 0;
+  left: 70%;
+}
+
+.intervenants {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+	width: 80vw;
+	margin: auto;
+	margin-top: 5rem;
+}
+
+.personne {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photo {
+  content: '';
+  height: 15rem;
+  width: 15rem;
+  border-radius: 15rem;
+  background: red;
+  margin-bottom: 0.75rem;
+}
+
+.personne-name {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.personne-content {
+  font-size: 1.75rem;
+  color: #777;
+  margin-bottom: 1.5rem;
+}
+
+.personne .button {
+  font-weight: bolder;
+  background: #9acf64;
+}
+
+.border-bottom {
+	border-bottom: 0.1rem solid #fff;
+}
+
+.border-top {
+	border-top: 0.1rem solid #fff;
+}
+
+.infos-icons {
+	width: 100vw;
+	height: 75vh;
+	display: flex;
+	position: relative;
+
+	.informations {
+		height: 100%;
+		flex-basis: 20%;
+		display: flex;
+		flex-direction: column;
+		background: $light_green;
+		color: #fff;
+		justify-content: center;
+		padding: 0 2.5vw;
+		font-size: 2.25rem;
+
+		.information {
+			height: 25vh;
+			display: flex;
+			align-items: center;
+			
+			img {
+				margin-right: 3rem;
+				height: 17.5vh;
+			}
+			
+			.text {
+				display: flex;
+				flex-direction: column;
+			}
+		}
+	}
+	
+	.image {
+		content: '';
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		flex-basis: 60%;
+		height: 100%;
+	}
+	
+	.map-link {
+		position: absolute;
+		z-index: 2;
+		bottom: 3rem;
+		right: 8rem;
+		padding: 1rem;
+		background: red;
+		border-radius: 1000rem;
+		text-transform: uppercase;
+		font-size: 1.25rem;
+		cursor: pointer;
+	}
+}
+
+.all-videos {
+	width: 80vw;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	
+	.overlay {
+		background: rgba(0,0,0,0.5);
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		filter: opacity(0);
+		transition: 0.3s ease;
+		cursor: pointer;
+		
+		&:hover {
+			filter: opacity(1);
+		}
+	}
+	
+	.videos {
+		display: flex;
+		flex-direction: column;
+		width: 39.5vw;
+		
+		.huge-video {
+			height: 40vh;
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			color: #fff;
+			
+			.video-title {
+				font-size: 2.25rem;
+				font-weight: bolder;
+				text-transform: uppercase;
+			}
+			
+			.name {
+				font-size: 1.75rem;
+				text-transform: uppercase;
+			}
+		}
+		
+		.small-video {
+			height: 20vh;
+			display: flex;
+			margin-top: 2vh;
+			
+			img {
+				content: '';
+				height: 20vh;
+				width: 15vw;
+				background: green;
+				cursor: pointer;
+			}
+			
+			.text {
+				display: flex;
+				flex-direction: column;
+				margin: 3rem 0 0 3rem;
+				padding-right: 7.5vw;
+				
+				.video-title {
+					font-weight: bolder;
+					font-size: 2rem;
+					margin-bottom: 1rem;
+				}
+				
+				.name {
+					font-size: 1.5rem;
+				}
+			}
+		}
+	}
+}
+
+.actus {
+	width: 80vw;
+	display: flex;
+	justify-content: center;
+	
+	.actu {
+		width: 19vw;
+		margin: 0 0.5vw;
+		display: flex;
+		flex-direction: column;
+		background: #fff;
+		box-shadow: 0 0 1rem #aaa;
+		
+		.actu-header {
+			height: 25vh;
+			width: 19vw;
+			content: '';
+			background: red;
+		}
+		
+		.actu-content {
+			padding: 1rem;
+			display: flex;
+			flex-direction: column;
+			
+			.actu-title {
+				font-weight: bolder;
+				font-size: 1.75rem;
+			}
+			
+			.actu-text {
+				font-size: 1.5rem;
+				margin: 1.5rem 0;
+			}
+			
+			.actu-button {
+				padding: 0.5rem 1rem;
+				font-size: 1.25rem;
+				border: 0.1rem solid grey;
+				border-radius: 1000rem;
+				text-transform: uppercase;
+				width: 30%;
+				text-align: center;
+				margin: auto;
+				cursor: pointer;
+				transition: 0.2s ease;
+				
+				&:hover {
+					background: grey;
+					color: white;
+				}
+			}
+			
+			.actu-date {
+				margin-top: 1.5rem;
+			}
+		}
+	}
+}

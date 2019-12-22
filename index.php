@@ -26,6 +26,8 @@ if ( have_posts() ) {
     $programs_2 = get_field('programm_2');
 	  
     $intervenants = get_field('people');
+	  
+    $news = get_field('news');
 ?>
 
   <section class="landing" style="background-image: url('<?php echo $banner_background_image['url']; ?>')">
@@ -169,6 +171,24 @@ if ( have_posts() ) {
 				  </div>
 			  </div>
 		  </div>
+	  </div>
+  </section>
+
+  <section class="content-section yellow">
+    <span class="title">Actus</span>
+	  <div class="actus">
+		  <?php foreach($news as $new): ?>
+			  <div class="actu">
+				  <div class="actu-header">
+				  </div>
+				  <div class="actu-content">
+					  <span class="actu-title"><?php echo $new['title'] ?></span>
+					  <span class="actu-text"><?php echo $new['content'] ?></span>
+					  <span class="actu-button">Lire la suite</span>
+					  <span class="actu-date"><?php echo $new['date'] ?></span>
+				  </div>
+			  </div>
+		  <?php endforeach; ?>
 	  </div>
   </section>
 
